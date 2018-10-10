@@ -28,7 +28,7 @@ affiliations:
    index: 2
  - name: Centro de Investigación de Meteorología Aeronáutica (CIMA), DGAC, Quito, Ecuador
    index: 3   
- - name: Hydraulic Engineering and Environmental Research Group (GTAIHA), Universidad Nacional de Colombia Sede Manizales, Manizales, Colombia
+ - name: Hydraulic Engineering and Environmental Research Group (GTAIHA), Universidad Nacional de Colombia Sede Manizales,    Manizales, Colombia
    index: 4     
 date: 31 October 2018
 bibliography: AAS4WRF.bib
@@ -36,7 +36,7 @@ bibliography: AAS4WRF.bib
 
 # Summary
 
-The Weather Research and Forecasting with Chemistry (``WRF-Chem``) community model (Grell et al., 2005) have been widely used for the study of pollutants transport, formation of secondary pollutants, as well as for the assessment of air quality policies implementation. A key factor to improve the WRF-Chem air quality simulations over urban areas is the representation of anthropogenic emission sources. There are several tools that are available to assist users in creating their own emissions based on global emissions information; however, there is no single tool that will construct local emissions input datasets for any particular domain at this time. Because the official emissions preprocessor is designed to work with domains located over North America, this work presents the Another Assimilation System for WRF-Chem (``AAS4WRF``), a NCL based mass-conserving emissions preprocessor designed to create WRF-Chem ready emissions files from local inventories on a lat/lon projection. AAS4WRF is appropriate to scale emission rates from both surface and elevated sources, providing the users an alternative way to assimilate their emissions to WRF-Chem. Since it was successfully tested for the first time for the city of Lima, Peru in 2014 (managed by SENAMHI, the National Weather Service of the country), several studies on air quality modelling have applied this open source utility to conduct their experimental air quality simulations. Two case studies performed in the metropolitan areas of São Paulo and Manizales in Brazil and Colombia, respectively, are here presented in order to analyse the influence of using local or global emission inventories in the representation of regulated air pollutants such as tropospheric ozone. Although AAS4WRF works with local emissions information at the moment, further work is being conducted to make it compatible with global/regional emissions data file format.
+The Weather Research and Forecasting with Chemistry (``WRF-Chem``) community model (Grell et al., 2005) have been widely used for the study of pollutants transport, formation of secondary pollutants, as well as for the assessment of air quality policies implementation. A key factor to improve the WRF-Chem air quality simulations over urban areas is the representation of anthropogenic emission sources. There are several tools that are available to assist users in creating their own emissions based on global emissions information; however, there is no single tool that will construct local emissions input datasets for any particular domain at this time. Because the official emissions preprocessor is designed to work with domains located over North America, this work presents the Another Assimilation System for WRF-Chem (``AAS4WRF``), a NCL based mass-conserving emissions preprocessor designed to create WRF-Chem ready emissions files from local inventories on a lat/lon projection. AAS4WRF is appropriate to scale emission rates from both surface and elevated sources, providing the users an alternative way to assimilate their emissions to WRF-Chem. Since it was successfully tested for the first time for the city of Lima, Peru in 2014 (managed by SENAMHI, the National Weather Service of the country), several studies on air quality modelling have applied this open source utility to conduct their experimental air quality simulations (Gavidia-Calderón et al., 2018; Vara-Vela et al., 2018; Gonzalez et al., 2018; Vara-Vela et al., 2017; Vara-Vela et al., 2016; Hoshyaripour et al., 2016; Andrade et al., 2015). Two case studies performed in the metropolitan areas of São Paulo and Manizales in Brazil and Colombia, respectively, are here presented in order to analyse the influence of using local or global emission inventories in the representation of regulated air pollutants such as tropospheric ozone. Although AAS4WRF works with local emissions information at the moment, further work is being conducted to make it compatible with global/regional emissions data file format.
 
 # Structure of input emissions
 
@@ -99,15 +99,15 @@ Or
 
 # Examples
 
-The following two examples compare the WRF-Chem model performance in terms of tropospheric ozone for different emissions datasets, those derived from global models such as ``EDGAR`` and ``RETRO`` are scaled down into the domains using the emission preprocessors ``anthro_emiss`` and ``prep_chem_src`` (Freitas et al., 2011), while those derived from local information are scaled using the AAS4WRF. Figs. 1, 2 and 3 show the configuration of model simulation domains, spatial distribution of global and local NO emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and three different global emission inventories, respectively.
+The following two examples compare the WRF-Chem model performance in terms of tropospheric ozone for different emissions datasets, those derived from global models such as ``EDGAR`` and ``RETRO`` are scaled down into the domains using the emission preprocessors ``anthro_emiss`` and ``prep_chem_src`` (Freitas et al., 2011), while those derived from local information are scaled using the AAS4WRF. Figs. 1, 2 and 3 show the configuration of model simulation domains, spatial distribution of global and local nitric oxide emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and three different global emission inventories, respectively, for a case study in Manizales, Colombia.
 
 ![Model application for Manizales.](Manizales.png)
 
-Similar to Fig. 1, Fig. 2 shows...
+Figs. 4, 5 and 6 show the configuration of model simulation domains, spatial distribution of global and local aldehyde emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and global emission inventories, respectively, for a case study in São Paulo, Brazil.
 
 ![Model application for São Paulo.](SaoPaulo.png)
 
-# citations
+The use of local emissions information allowed significant improvements in the representation of tropospheric ozone, characterised by better performance metrics (e.g., González et al. (2018)), and underscores the importance of using consistent (mass-conserving) emission preprocessor tools, especially in medium-sized cities where application of high-resolution air quality models is scarce.
 
 # Acknowledgements
 
