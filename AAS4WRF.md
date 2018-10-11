@@ -42,7 +42,8 @@ The Weather Research and Forecasting with Chemistry (``WRF-Chem``) community mod
 
 AAS4WRF requires that the user provides a file containing the gridded hourly emissions (``emissions.txt`` in this example). Each line of the file is required to have the following format:
 
-id   longitude   latitude   species_1   species_2 … species_i   species_(i+1) … species_36
+| id  |  longitude  |  latitude  |  species_1  |  species_2  |  …  |  species_i  |  species_(i+1)  |  …  |  species_36  |
+|:----|:------------|:-----------|:------------|:------------|:----|:------------|:----------------|:----|:-------------|
 
 where:
 
@@ -83,9 +84,9 @@ The AAS4WRF is a code written entirely in the NCAR Command Language (NCL, 2017),
 |&species_control  |                                                         | 
 |  so2             | = integer; column number for so2                        |
 |  no              | = integer; column number for no                         |
-|  ...             |                                                         |
+|  ...             | ...                                                     |
 |  i               | = integer; column number for ith-species                |
-|  ...             |                                                         |
+|  ...             | ...                                                     |
 |  ecc             | = integer; column number for ecc (36 specifies the number of species in the CBMZ-MOSAIC mechanism) |
 
 3. Run AAS4WRF by typing: ``ncl AAS4WRF.ncl``
