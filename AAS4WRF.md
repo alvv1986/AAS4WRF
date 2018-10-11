@@ -104,7 +104,7 @@ Or
 
 The following two examples compare the WRF-Chem model performance in terms of tropospheric ozone for different emissions datasets, those derived from global models such as ``EDGAR`` and ``RETRO`` are scaled down into the domains using the emission preprocessors ``anthro_emiss`` and ``prep_chem_src`` (Freitas et al., 2011), while those derived from local information are scaled using the AAS4WRF. Figs. 1, 2 and 3 show the configuration of model simulation domains, spatial distribution of global and local nitric oxide emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and three different global emission inventories, respectively, for a case study in Manizales, Colombia.
 
-![Model application for Manizales.](Manizales.png)
+![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/domains.png)
 
 Figs. 4, 5 and 6 show the configuration of model simulation domains, spatial distribution of global and local aldehyde emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and global emission inventories, respectively, for a case study in São Paulo, Brazil.
 
