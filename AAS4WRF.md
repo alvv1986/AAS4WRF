@@ -61,32 +61,32 @@ The AAS4WRF is a code written entirely in the NCAR Command Language (NCL, 2017),
 1. Run ``GEOGRID``, ``UNGRIB``, ``METGRID``, and ``REAL`` normally as a standard WRF-Chem simulation.
 2. Enter the following information into the namelist.emiss: 
 
-|  Variable Names  |   Description                                           |
-|:-----------------|:--------------------------------------------------------|
-|&input_files      |                                                         |
-|  wrf_dir         | = string; full path and name of ``wrfinput_d01``        |
-|  emiss_dir       | = string; full path and name of emissions.txt           |
-|------------------|---------------------------------------------------------|
-| &grid_points     |                                                         |
-|  nx              | = integer; number of longitude points in emissions.txt  |
-|  ny              | = integer; number of latitude points in emissions.txt   |
-|  nt              | = integer; number of time points in emissions.txt       |
-|  hemi            | = integer; hemisphere: NH→1; SH→-1                      |
-|:-----------------|---------------------------------------------------------|
-|&time_control     |                                                         | 
-|  sy              | = integer; start year                                   |
-|  sm              | = integer; start month                                  |
-|  sd              | = integer; start day                                    |
-|  ey              | = integer; end year                                     |
-|  em              | = integer; end month                                    |
-|  ed              | = integer; end day                                      |
-|------------------|---------------------------------------------------------|
-|&species_control  |                                                         | 
-|  so2             | = integer; column number for so2                        |
-|  no              | = integer; column number for no                         |
-|  ...             | ...                                                     |
-|  i               | = integer; column number for ith-species                |
-|  ...             | ...                                                     |
+|  Variable Names  |   Description                                                                        |
+|:-----------------|:-------------------------------------------------------------------------------------|
+|&input_files      |                                                                                      |
+|  wrf_dir         | = string; full path and name of ``wrfinput_d01``                                     |
+|  emiss_dir       | = string; full path and name of emissions.txt                                        |
+|------------------|--------------------------------------------------------------------------------------|
+| &grid_points     |                                                                                      |
+|  nx              | = integer; number of longitude points in emissions.txt                               |
+|  ny              | = integer; number of latitude points in emissions.txt                                |
+|  nt              | = integer; number of time points in emissions.txt                                    |
+|  hemi            | = integer; hemisphere: NH→1; SH→-1                                                   |
+|:-----------------|--------------------------------------------------------------------------------------|
+|&time_control     |                                                                                      | 
+|  sy              | = integer; start year                                                                |
+|  sm              | = integer; start month                                                               |
+|  sd              | = integer; start day                                                                 |
+|  ey              | = integer; end year                                                                  |
+|  em              | = integer; end month                                                                 |
+|  ed              | = integer; end day                                                                   |
+|------------------|--------------------------------------------------------------------------------------|
+|&species_control  |                                                                                      | 
+|  so2             | = integer; column number for so2                                                     |
+|  no              | = integer; column number for no                                                      |
+|  ...             | ...                                                                                  |
+|  i               | = integer; column number for ith-species                                             |
+|  ...             | ...                                                                                  |
 |  ecc             | = integer; column number for ecc (36 specifies the number of species in CBMZ-MOSAIC) |
 
 3. Run AAS4WRF by typing: ``ncl AAS4WRF.ncl``
@@ -104,6 +104,10 @@ Or
 # Examples
 
 The following two examples compare the WRF-Chem model performance in terms of tropospheric ozone for different emissions datasets, those derived from global models such as ``EDGAR`` and ``RETRO`` are scaled down into the domains using the emission preprocessors ``anthro_emiss`` and ``prep_chem_src`` (Freitas et al., 2011), while those derived from local information are scaled using the AAS4WRF. Figs. 1, 2 and 3 show the configuration of model simulation domains, spatial distribution of global and local nitric oxide emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and three different global emission inventories, respectively, for a case study in Manizales, Colombia.
+
+![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/domains.png)
+
+![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/domains.png)
 
 ![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/domains.png)
 
