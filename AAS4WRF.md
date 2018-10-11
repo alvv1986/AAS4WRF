@@ -107,9 +107,9 @@ The following two examples compare the WRF-Chem model performance in terms of tr
 
 ![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/domains.png)
 
-![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/domains.png)
+![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/EDGARvslocal.png)
 
-![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/domains.png)
+![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/O3results.png)
 
 Figs. 4, 5 and 6 show the configuration of model simulation domains, spatial distribution of global and local aldehyde emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and global emission inventories, respectively, for a case study in São Paulo, Brazil.
 
