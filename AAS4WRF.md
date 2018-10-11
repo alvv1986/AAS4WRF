@@ -28,7 +28,7 @@ affiliations:
    index: 2
  - name: Centro de Investigación de Meteorología Aeronáutica (CIMA), DGAC, Quito, Ecuador
    index: 3   
- - name: Hydraulic Engineering and Environmental Research Group (GTAIHA), Universidad Nacional de Colombia Sede Manizales,    Manizales, Colombia
+ - name: Hydraulic Engineering and Environmental Research Group (GTAIHA), Universidad Nacional de Colombia Sede Manizales, Manizales, Colombia
    index: 4     
 date: 31 October 2018
 bibliography: AAS4WRF.bib
