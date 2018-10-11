@@ -87,7 +87,7 @@ The AAS4WRF is a code written entirely in the NCAR Command Language (NCL, 2017),
 |  ...             | ...                                                     |
 |  i               | = integer; column number for ith-species                |
 |  ...             | ...                                                     |
-|  ecc             | = integer; column number for ecc (36 specifies the number of species in the CBMZ-MOSAIC mechanism) |
+|  ecc             | = integer; column number for ecc (36 specifies the number of species in CBMZ-MOSAIC) |
 
 3. Run AAS4WRF by typing: ``ncl AAS4WRF.ncl``
 
