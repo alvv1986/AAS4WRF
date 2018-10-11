@@ -60,30 +60,33 @@ The AAS4WRF is a code written entirely in the NCAR Command Language (NCL, 2017),
 1. Run ``GEOGRID``, ``UNGRIB``, ``METGRID``, and ``REAL`` normally as a standard WRF-Chem simulation.
 2. Enter the following information into the namelist.emiss: 
 
-Variable Names     Description
+|  Variable Names  |   Description   |
+|:-----------------|:----------------|
+|&input_files      |                 |
+|  wrf_dir         |= string; full path and name of ``wrfinput_d01``           |
+|  emiss_dir       |= string; full path and name of emissions.txt              |
+|------------------|---------------------------------------------------------|
+| &grid_points     |                                                         |
+|  nx              | = integer; number of longitude points in emissions.txt|
+|  ny              | = integer; number of latitude points in emissions.txt|
+|  nt              | = integer; number of time points in emissions.txt|
+|  hemi            | = integer; hemisphere: NH→1; SH→-1|
+|&time_control     | | 
+|  sy             |= integer; start year|
+|  sm             |= integer; start month|
+|  sd             |= integer; start day|
+|  ey             |= integer; end year|
+|  em             |= integer; end month|
+|  ed             |= integer; end day|
+|-----------------|--------------------|
+|&species_control  | | 
+|  so2            |= integer; column number for so2|
+|  no             |= integer; column number for no|
+|  ...           | |
+|  i              |= integer; column number for ith-species|
+|  ... | |
+|  ecc    |        = integer; column number for ecc (36 specifies the number of species in the CBMZ-MOSAIC mechanism)|
 
-&input_files
-  wrf_dir        = string; full path and name of ``wrfinput_d01`` 
-  emiss_dir      = string; full path and name of emissions.txt
-&grid_points
-  nx             = integer; number of longitude points in emissions.txt
-  ny             = integer; number of latitude points in emissions.txt
-  nt             = integer; number of time points in emissions.txt
-  hemi           = integer; hemisphere: NH→1; SH→-1
-&time_control
-  sy             = integer; start year
-  sm             = integer; start month
-  sd             = integer; start day
-  ey             = integer; end year
-  em             = integer; end month
-  ed             = integer; end day
-&species_control   
-  so2            = integer; column number for so2
-  no             = integer; column number for no
-  ...
-  i              = integer; column number for ith-species
-  ...
-  ecc            = integer; column number for ecc (36 specifies the number of species in the CBMZ-MOSAIC mechanism)
 
 3. Run AAS4WRF by typing: ``ncl AAS4WRF.ncl``
 
