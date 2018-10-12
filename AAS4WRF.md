@@ -111,6 +111,8 @@ The following two examples compare the WRF-Chem model performance in terms of tr
 
 The use of local emissions information allowed significant improvements in the representation of tropospheric ozone, characterised by better performance metrics (e.g., González et al. (2018)), and underscores the importance of using consistent (mass-conserving) emission preprocessor tools, especially in medium-sized cities where application of high-resolution air quality models is scarce.
 
+\pagebreak
+
 # Acknowledgements
 
 We acknowledge use of the WRF-Chem preprocessor tool anthro_emiss provided by the Atmospheric Chemistry Observations and Modeling Lab (ACOM) of NCAR.
