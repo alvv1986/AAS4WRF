@@ -66,7 +66,6 @@ The AAS4WRF is a code written entirely in the NCAR Command Language (NCL, 2017),
 |&input_files      |                                                                                      |
 |  wrf_dir         | = string; full path and name of ``wrfinput_d01``                                     |
 |  emiss_dir       | = string; full path and name of emissions.txt                                        |
-|------------------|--------------------------------------------------------------------------------------|
 | &grid_points     |                                                                                      |
 |  nx              | = integer; number of longitude points in emissions.txt                               |
 |  ny              | = integer; number of latitude points in emissions.txt                                |
