@@ -66,12 +66,11 @@ The AAS4WRF is a code written entirely in the NCAR Command Language (NCL, 2017),
 |&input_files      |                                                                                      |
 |  wrf_dir         | = string; full path and name of ``wrfinput_d01``                                     |
 |  emiss_dir       | = string; full path and name of emissions.txt                                        |
-| &grid_points     |                                                                                      |
+|&grid_points      |                                                                                      |
 |  nx              | = integer; number of longitude points in emissions.txt                               |
 |  ny              | = integer; number of latitude points in emissions.txt                                |
 |  nt              | = integer; number of time points in emissions.txt                                    |
 |  hemi            | = integer; hemisphere: NH→1; SH→-1                                                   |
-|:-----------------|--------------------------------------------------------------------------------------|
 |&time_control     |                                                                                      | 
 |  sy              | = integer; start year                                                                |
 |  sm              | = integer; start month                                                               |
@@ -79,7 +78,6 @@ The AAS4WRF is a code written entirely in the NCAR Command Language (NCL, 2017),
 |  ey              | = integer; end year                                                                  |
 |  em              | = integer; end month                                                                 |
 |  ed              | = integer; end day                                                                   |
-|------------------|--------------------------------------------------------------------------------------|
 |&species_control  |                                                                                      | 
 |  so2             | = integer; column number for so2                                                     |
 |  no              | = integer; column number for no                                                      |
