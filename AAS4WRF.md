@@ -52,7 +52,7 @@ latitude : grid point latitude
 longitude: grid point longitude
 species_i: ith-species; 36 specifies the number of species in the ``CBMZ-MOSAIC`` chemical mecanism (remember to use the right units: mol km-2 hr-1 for gases and µg m-3 m s-1 for aerosols). Complete with columns of ``0`` if data is not available.
 
-There are nx*ny*nt lines in the file emissions.txt, arranged in blocks of time (each with length of nx$\times$ny$\times$1) as follows: longitude and latitude are periodic $1D$ strictly monotonically increasing and decreasing arrays, respectively, that have their components equally spaced at $dx$ (same horizontal resolution as the WRF grid). As geo-referenced data, we recommend to use any kind of GIS software to build their emission files (e.g., the emission file emissions.txt used in this example was built using Quantum GIS). In addition, data frames produced by the R package ``eixport`` [@IbarraEspinosaetal2018] can be used as input emissions for AAS4WRF.
+There are nx*ny*nt lines in the file emissions.txt, arranged in blocks of time (each with length of ``nx*ny*1``) as follows: longitude and latitude are periodic ``1D`` strictly monotonically increasing and decreasing arrays, respectively, that have their components equally spaced at ``dx`` (same horizontal resolution as the WRF grid). As geo-referenced data, we recommend to use any kind of GIS software to build their emission files (e.g., the emission file emissions.txt used in this example was built using Quantum GIS). In addition, data frames produced by the R package ``eixport`` [@IbarraEspinosaetal2018] can be used as input emissions for AAS4WRF.
 
 # Usage
 
@@ -92,7 +92,7 @@ The AAS4WRF is a code written entirely in the NCAR Command Language [@ncl2017], 
 
 * Output files: two different output files can be produced, depending on the choice for ``io_style_emisisons``:
 
-    ``wrfchemi_00z_d01`` and ``wrfchemi_12z_d01`` for io_style_emissions=1: Set nt to 24 in namelist.emiss, and run AAS4WRF (although the file emissions.txt has more than 24 times, the code will only read the first nx$\times$ny$\times$24 lines). We recommend the user to visualise the content of the output files to check that everything is working properly up to this point.
+    ``wrfchemi_00z_d01`` and ``wrfchemi_12z_d01`` for io_style_emissions=1: Set nt to 24 in namelist.emiss, and run AAS4WRF (although the file emissions.txt has more than 24 times, the code will only read the first ``nx*ny*24`` lines). We recommend the user to visualise the content of the output files to check that everything is working properly up to this point.
 
     Or
 
