@@ -30,7 +30,7 @@ affiliations:
    index: 3   
  - name: Hydraulic Engineering and Environmental Research Group (GTAIHA), Universidad Nacional de Colombia Sede Manizales, Manizales, Colombia
    index: 4     
-date: 31 October 2018
+date: 12 October 2018
 bibliography: paper.bib
 ---
 
@@ -102,9 +102,9 @@ The AAS4WRF is a code written entirely in the NCAR Command Language [@ncl2017], 
 
 The following two examples compare the WRF-Chem model performance in terms of tropospheric ozone for different emissions datasets, those derived from global models such as ``EDGAR`` and ``RETRO`` are scaled down into the domains using the emission preprocessors ``anthro_emiss`` and ``prep_chem_src`` [@Freitasetal2011], while those derived from local information are scaled using the AAS4WRF. Spatial distributions of local and global emissions, as well as temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations, are shown in Figs 1 and 2 for a case study in Manizales, Colombia and São Paulo, Brazil, respectively.
 
-![spatial distribution of local and global nitric oxide emissions (top panels), and temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations (bottom panels) for a case study in Manizales, Colombia.](https://github.com/alvv1986/AAS4WRF/blob/master/paper/SaoPaulo.png)
+![spatial distribution of local and global nitric oxide emissions (top panels), and temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations (bottom panels) for a case study in Manizales, Colombia (Figure adapted from [@Gonzalezetal2018]).](https://github.com/alvv1986/AAS4WRF/blob/master/paper/SaoPaulo.png)
 
-![spatial distribution of local and global aldehyde emissions (top panels), and temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations (bottom panels) for a case study in São Paulo, Brazil.](https://github.com/alvv1986/AAS4WRF/blob/master/paper/SaoPaulo.png)
+![spatial distribution of local and global aldehyde emissions (top panels), and temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations (bottom panels) for a case study in São Paulo, Brazil (Figure adapted from [@VaraVelaetal2017]).](https://github.com/alvv1986/AAS4WRF/blob/master/paper/SaoPaulo.png)
 
 The use of local emissions information allowed significant improvements in the representation of tropospheric ozone, characterised by better performance metrics (e.g., [@Gonzalezetal2018]), and underscores the importance of using consistent (mass-conserving) emission preprocessor tools, especially in medium-sized cities where application of high-resolution air quality models is scarce.
 
