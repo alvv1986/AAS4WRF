@@ -103,13 +103,11 @@ Or
 
 # Examples
 
-The following two examples compare the WRF-Chem model performance in terms of tropospheric ozone for different emissions datasets, those derived from global models such as ``EDGAR`` and ``RETRO`` are scaled down into the domains using the emission preprocessors ``anthro_emiss`` and ``prep_chem_src`` (Freitas et al., 2011), while those derived from local information are scaled using the AAS4WRF. Figs. 1, 2 and 3 show the configuration of model simulation domains, spatial distribution of global and local nitric oxide emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and three different global emission inventories, respectively, for a case study in Manizales, Colombia.
+The following two examples compare the WRF-Chem model performance in terms of tropospheric ozone for different emissions datasets, those derived from global models such as ``EDGAR`` and ``RETRO`` are scaled down into the domains using the emission preprocessors ``anthro_emiss`` and ``prep_chem_src`` (Freitas et al., 2011), while those derived from local information are scaled using the AAS4WRF. Spatial distributions of local and global emissions, as well as temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations, are shown in Figs 1 and 2 for a case study in Manizales, Colombia and São Paulo, Brazil, respectively.
 
-![Model application for Manizales.](https://github.com/alvv1986/AAS4WRF/blob/master/SaoPaulo.png)
+![spatial distribution of local and global nitric oxide emissions (top panels), and temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations (bottom panels) for a case study in Manizales, Colombia.](https://github.com/alvv1986/AAS4WRF/blob/master/SaoPaulo.png)
 
-Figs. 4, 5 and 6 show the configuration of model simulation domains, spatial distribution of global and local aldehyde emission fluxes in the fine modelling domain, and the temporal variation of hourly ozone concentrations from simulations with the local and global emission inventories, respectively, for a case study in São Paulo, Brazil.
-
-![Model application for São Paulo.](https://github.com/alvv1986/AAS4WRF/blob/master/SaoPaulo.png)
+![spatial distribution of local and global aldehyde emissions (top panels), and temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations (bottom panels) for a case study in São Paulo, Brazil.](https://github.com/alvv1986/AAS4WRF/blob/master/SaoPaulo.png)
 
 The use of local emissions information allowed significant improvements in the representation of tropospheric ozone, characterised by better performance metrics (e.g., González et al. (2018)), and underscores the importance of using consistent (mass-conserving) emission preprocessor tools, especially in medium-sized cities where application of high-resolution air quality models is scarce.
 
