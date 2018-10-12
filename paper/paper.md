@@ -64,27 +64,27 @@ The AAS4WRF is a code written entirely in the NCAR Command Language [@ncl2017], 
 |  Variable Names  |   Description                                                                        |
 |:-----------------|:-------------------------------------------------------------------------------------|
 |&input_files      |                                                                                      |
-|  wrf_dir         | = string; full path and name of ``wrfinput_d01``                                     |
-|  emiss_dir       | = string; full path and name of emissions.txt                                        |
+|  wrf_dir         | string; full path and name of ``wrfinput_d01``                                     |
+|  emiss_dir       | string; full path and name of emissions.txt                                        |
 |&grid_points      |                                                                                      |
-|  nx              | = integer; number of longitude points in emissions.txt                               |
-|  ny              | = integer; number of latitude points in emissions.txt                                |
-|  nt              | = integer; number of time points in emissions.txt                                    |
-|  hemi            | = integer; hemisphere: NH→1; SH→-1                                                   |
+|  nx              | integer; number of longitude points in emissions.txt                               |
+|  ny              | integer; number of latitude points in emissions.txt                                |
+|  nt              | integer; number of time points in emissions.txt                                    |
+|  hemi            | integer; hemisphere: NH→1; SH→-1                                                   |
 |&time_control     |                                                                                      | 
-|  sy              | = integer; start year                                                                |
-|  sm              | = integer; start month                                                               |
-|  sd              | = integer; start day                                                                 |
-|  ey              | = integer; end year                                                                  |
-|  em              | = integer; end month                                                                 |
-|  ed              | = integer; end day                                                                   |
+|  sy              | integer; start year                                                                |
+|  sm              | integer; start month                                                               |
+|  sd              | integer; start day                                                                 |
+|  ey              | integer; end year                                                                  |
+|  em              | integer; end month                                                                 |
+|  ed              | integer; end day                                                                   |
 |&species_control  |                                                                                      | 
-|  so2             | = integer; column number for so2                                                     |
-|  no              | = integer; column number for no                                                      |
+|  so2             | integer; column number for so2                                                     |
+|  no              | integer; column number for no                                                      |
 |  ...             | ...                                                                                  |
-|  i               | = integer; column number for ith-species                                             |
+|  i               | integer; column number for ith-species                                             |
 |  ...             | ...                                                                                  |
-|  ecc             | = integer; column number for ecc (36 species for the CBMZ-MOSAIC mecanism)           |
+|  ecc             | integer; column number for ecc (36 species for the CBMZ-MOSAIC mecanism)           |
 
 3. Run AAS4WRF by typing: ``ncl AAS4WRF.ncl``
 
