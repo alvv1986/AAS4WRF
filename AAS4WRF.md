@@ -91,15 +91,15 @@ The AAS4WRF is a code written entirely in the NCAR Command Language (NCL, 2017),
 
 3. Run AAS4WRF by typing: ``ncl AAS4WRF.ncl``
 
--Input files: emissions.txt, wrfinput_d01 and namelist.emiss
+..* Input files: emissions.txt, wrfinput_d01 and namelist.emiss
 
--Output files: two different output files can be produced, depending on the choice for ``io_style_emisisons``:
+..* Output files: two different output files can be produced, depending on the choice for ``io_style_emisisons``:
 
-1. ``wrfchemi_00z_d01`` and ``wrfchemi_12z_d01`` for io_style_emissions=1: Set nt to 24 in namelist.emiss, and run AAS4WRF (although the file emissions.txt has more than 24 times, the code will only read the first nx*ny*24 lines). We recommend the user to visualise the content of the output files to check that everything is working properly up to this point.
+``wrfchemi_00z_d01`` and ``wrfchemi_12z_d01`` for io_style_emissions=1: Set nt to 24 in namelist.emiss, and run AAS4WRF (although the file emissions.txt has more than 24 times, the code will only read the first nx*ny*24 lines). We recommend the user to visualise the content of the output files to check that everything is working properly up to this point.
 
 Or 
 
-2. ``wrfchemi_d01_<date/time>`` for io_style_emissions=2: Set nt to 168 (maximum number of times in this example) and run AAS4WRF. If a shorter period is desired, make sure the number of days in the section &time_control is fixed accordingly. This version of AAS4WRF only works with entire days (no fractional days are managed by this program at the moment).
+``wrfchemi_d01_<date/time>`` for io_style_emissions=2: Set nt to 168 (maximum number of times in this example) and run AAS4WRF. If a shorter period is desired, make sure the number of days in the section &time_control is fixed accordingly. This version of AAS4WRF only works with entire days (no fractional days are managed by this program at the moment).
 
 # Examples
 
