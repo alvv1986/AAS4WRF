@@ -30,7 +30,7 @@ affiliations:
    index: 3   
  - name: Hydraulic Engineering and Environmental Research Group (GTAIHA), Universidad Nacional de Colombia Sede Manizales, Manizales, Colombia
    index: 4     
-date: 12 October 2018
+date: 14 October 2018
 bibliography: paper.bib
 ---
 
