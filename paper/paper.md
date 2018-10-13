@@ -50,13 +50,13 @@ where:
 * ``id``: grid point ID
 * ``latitude``: grid point latitude
 * ``longitude``: grid point longitude
-* ``species_i``: ith-species; 36 specifies the number of species in the ``CBMZ-MOSAIC`` chemical mecanism (remember to use the right units: $mol km^{-2}^ hr^{-1}^$ for gases and $μg m^{-2}^ s^{-1}^$ for aerosols). Complete with columns of ``0`` if data is not available.
+* ``species_i``: ith-species; 36 specifies the number of species in the ``CBMZ-MOSAIC`` chemical mecanism (remember to use the right units: $mol km^{-2} hr^{-1}$ for gases and $μg m^{-2} s^{-1}$ for aerosols). Complete with columns of ``0`` if data is not available.
 
 There are ``nx*ny*nt`` lines in the file emissions.txt, arranged in blocks of time (each with length of ``nx*ny*1``) as follows: longitude and latitude are periodic ``1D`` strictly monotonically increasing and decreasing arrays, respectively, that have their components equally spaced at ``dx`` (same horizontal resolution as the WRF grid). As geo-referenced data, we recommend to use any kind of GIS software to build their emission files (e.g., the emission file emissions.txt used in this example was built using Quantum GIS). In addition, data frames produced by the R packages ``vein`` [@gmdvein] and ``eixport`` [@IbarraEspinosaetal2018] can be used as input emissions for AAS4WRF.
 
 # Usage
 
-The AAS4WRF is a code written entirely in the NCAR Command Language [@ncl2017], then the users only need to correctly build both NCL and NCAR Graphics, or install the available binaries for their platform. Prior to run AAS4WRF, the user must set up a namelist file called ``namelist.emiss``. The workflow for using AAS4WRF is listed below.
+The AAS4WRF is a code written entirely in the NCAR Command Language (http://www.ncl.ucar.edu/), then the users only need to correctly build both NCL and NCAR Graphics, or install the available binaries for their platform. Prior to run AAS4WRF, the user must set up a namelist file called ``namelist.emiss``. The workflow for using AAS4WRF is listed below.
 
 1. Run ``GEOGRID``, ``UNGRIB``, ``METGRID``, and ``REAL`` normally as a standard WRF-Chem simulation.
 2. Enter the following information into the namelist.emiss: 
