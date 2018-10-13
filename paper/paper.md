@@ -106,7 +106,7 @@ The following two examples compare the WRF-Chem model performance in terms of tr
 
 ![spatial distribution of local and global aldehyde emissions (top panels), and temporal variations of hourly ozone concentrations from observations and WRF-Chem simulations (bottom panels) for a case study in São Paulo, Brazil (Figure adapted from [@VaraVelaetal2017]).](https://github.com/alvv1986/AAS4WRF/blob/master/paper/SaoPaulo.png)
 
-The use of local emissions information allowed significant improvements in the representation of tropospheric ozone, characterised by better performance metrics (e.g., [@Gonzalezetal2018]), and underscores the importance of using consistent (mass-conserving) emission preprocessor tools, especially in medium-sized cities where application of high-resolution air quality models is scarce.
+The use of local emissions information allowed significant improvements in the representation of tropospheric ozone, characterised by better performance metrics (e.g., [@Gonzalezetal2018]), and underscores the importance of using consistent (mass-conserving) emission preprocessor tools, especially in medium-sized cities where application of high-resolution air quality models is scarce. The AAS4WRF is available at the repository https://github.com/alvv1986/AAS4WRF, and can be run...
 
 \pagebreak
 
