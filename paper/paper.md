@@ -56,7 +56,7 @@ There are ``nx*ny*nt`` lines in the file emissions.txt, arranged in blocks of ti
 
 # Usage
 
-The AAS4WRF is a code written entirely in the NCAR Command Language (http://www.ncl.ucar.edu/), then the users only need to correctly build both NCL and NCAR Graphics, or install the available binaries for their platform. Prior to run AAS4WRF, the user must set up a namelist file called ``namelist.emiss``. The workflow for using AAS4WRF is listed below.
+The AAS4WRF is a code written entirely in the NCAR Command Language (NCL) [@ncl2017]. NCL is an interpreted language designed specifically for scientific data analysis and visualization (supports NetCDF 3/4, GRIB 1/2, HDF 4/5, HDF-EOS 2/5, shapefile, ASCII, binary). Portable, robust, and free, NCL is available as binaries or open source, then the users only need to correctly build both NCL and NCAR Graphics, or install the available binaries for their platform. Prior to run AAS4WRF, the user must set up a namelist file called ``namelist.emiss``. The workflow for using AAS4WRF is listed below.
 
 1. Run ``GEOGRID``, ``UNGRIB``, ``METGRID``, and ``REAL`` normally as a standard WRF-Chem simulation.
 2. Enter the following information into the namelist.emiss: 
