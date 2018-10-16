@@ -42,7 +42,7 @@ The Weather Research and Forecasting with Chemistry (``WRF-Chem``) community mod
 
 AAS4WRF requires that the user provides a file containing the gridded hourly emissions (``emissions.txt`` in this example). Each line of the file is required to have the following format:
 
-|  id  |  longitude  |  latitude  |  sp1  |  sp2  |  …  |  spi  |  sp(i+1)  |  …  |  sp36  |
+|  id  |  longitude  |  latitude  |  species_1  |  species_2  |  …  |  species_i  |  species_(i+1)  |  …  |  species_36  |
 |:-----|:------------|:-----------|:------------|:------------|:----|:------------|:----------------|:----|:-------------|
 
 where:
@@ -50,7 +50,7 @@ where:
 * ``id``: grid point ID
 * ``latitude``: grid point latitude
 * ``longitude``: grid point longitude
-* ``sp_i``: ith-species; 36 specifies the number of species in the ``CBMZ-MOSAIC`` chemical mecanism (remember to use the right units: $mol km^{-2} hr^{-1}$ for gases and $μg m^{-2} s^{-1}$ for aerosols). Complete with columns of ``0`` if data is not available.
+* ``species_i``: ith-species; 36 specifies the number of species in the ``CBMZ-MOSAIC`` chemical mecanism (remember to use the right units: $mol km^{-2} hr^{-1}$ for gases and $μg m^{-2} s^{-1}$ for aerosols). Complete with columns of ``0`` if data is not available.
 
 There are ``nx*ny*nt`` lines in the file emissions.txt, arranged in blocks of time (each with length of ``nx*ny*1``) as follows: longitude and latitude are periodic ``1D`` strictly monotonically increasing and decreasing arrays, respectively, that have their components equally spaced at ``dx`` (same horizontal resolution as the WRF grid). As geo-referenced data, we recommend to use any kind of GIS software to build their emission files (e.g., the emission file emissions.txt used in this example was built using Quantum GIS). In addition, data frames produced by the R packages ``vein`` [@gmdvein] and ``eixport`` [@IbarraEspinosaetal2018] can be used as input emissions for AAS4WRF. Emissions regridding in AAS4WRF is done using special Earth System Modeling Framework (ESMF, https://www.earthsystemcog.org/projects/esmf/) functions that guarantee mass conservation.
 
