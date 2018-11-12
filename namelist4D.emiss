@@ -1,0 +1,60 @@
+&input_files
+ wrf_dir          = ./wrfinput_d01.nc
+ emiss_dir        = ./emissions-test.txt
+/
+
+&grid_points
+ nx               = 163,    ! number of longitude points in emissions.txt
+ ny               = 87,    ! number of latitude points in emissions.txt
+ nz               = 2,     ! number of vertical levels in emissions.txt
+ nt               = 168,    ! number of time points in emissions.txt
+ hemi             = -1,    ! hemisphere: NH->1; SH->-1
+/
+
+&time_control
+ sy               = 2015,  ! start year
+ sm               = 09,    ! start month
+ sd               = 29,    ! start day 
+ ey               = 2015,  ! end year
+ em               = 10,    ! end month
+ ed               = 05,    ! end day                                      
+/
+
+&species_control
+ so2              = 20,    ! column number starting at 3 (4th col. in NCL)
+ no               = 23,    ! complete with columns of "0" if data is not available
+ ald              = 18,     ! 36 species in total
+ hcho             = 4,
+ ora2             = 16,
+ nh3              = 7,
+ hc3              = 21,
+ hc5              = 15,
+ hc8              = 14,
+ eth              = 17,
+ co               = 3,
+ ol2              = 13,
+ olt              = 12,
+ oli              = 11,
+ tol              = 9,
+ xyl              = 8,
+ ket              = 6,
+ csl              = 19,
+ iso              = 10,
+ no2              = 22,
+ ch3oh            = 24,
+ c2h5oh           = 5,
+ pm25i            = 25,
+ pm25j            = 26,
+ so4i             = 27,
+ so4j             = 28,
+ no3i             = 29,
+ no3j             = 30,
+ orgi             = 31,
+ orgj             = 32,
+ eci              = 33,
+ ecj              = 34,
+ so4c             = 35,
+ no3c             = 36,
+ orgc             = 37,
+ ecc              = 38,
+/
