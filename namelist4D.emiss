@@ -6,7 +6,7 @@
 &grid_points
  nx               = 163,    ! number of longitude points in emissions.txt
  ny               = 87,    ! number of latitude points in emissions.txt
- nz               = 2,     ! number of vertical levels in emissions.txt
+ nz               = 2,     ! number of vertical levels in emissions.txt (it follows the e_vert distrib)
  nt               = 168,    ! number of time points in emissions.txt
  hemi             = -1,    ! hemisphere: NH->1; SH->-1
 /
